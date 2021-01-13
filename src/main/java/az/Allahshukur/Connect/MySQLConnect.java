@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 
 public class MySQLConnect {
 
-    public static void connect() {
-        try {
+    public static Connection connect() throws Exception{
             Class.forName("com.mysql.cj.jdbc.Driver");
             String host ="sql2.freemysqlhosting.net";
             String port = "3306";
@@ -16,9 +15,8 @@ public class MySQLConnect {
             String conURL = String.format("jdbc:mysql://%s:%s/%s",host,port,db);
             Connection con = DriverManager.getConnection(conURL, userName, password);
             System.out.println("Connected");
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+            return con;
+
     }
 
 }
