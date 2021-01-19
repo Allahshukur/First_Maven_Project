@@ -7,12 +7,12 @@ public class MySQLConnect {
 
     public static Connection connect() throws Exception{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String host ="sql2.freemysqlhosting.net";
+            String host ="localhost";
             String port = "3306";
-            String db = "sql2385489";
-            String userName = "sql2385489";
-            String password = "pQ3!bI2%";
-            String conURL = String.format("jdbc:mysql://%s:%s/%s",host,port,db);
+            String db = "student_and_teacher_db";
+            String userName = "root";
+            String password = "12345";
+            String conURL = String.format("jdbc:mysql://%s:%s/%s ?serverTimezone=UTC",host,port,db);
             Connection con = DriverManager.getConnection(conURL, userName, password);
             System.out.println("Connected");
             return con;

@@ -15,39 +15,55 @@ public class StudentEntity {
         return id;
     }
 
-    public void setId(Integer id) {
+    public StudentEntity setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public StudentEntity setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
+    public StudentEntity setSurname(String surname) {
         this.surname = surname;
+        return this;
     }
 
     public Integer getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public StudentEntity setAge(Integer age) {
         this.age = age;
+        return this;
     }
 
     public BigDecimal getScholarship() {
         return scholarship;
     }
 
-    public void setScholarship(BigDecimal scholarship) {
+    public StudentEntity setScholarship(BigDecimal scholarship) {
         this.scholarship = scholarship;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", scholarship=" + scholarship +
+                '}';
     }
 }

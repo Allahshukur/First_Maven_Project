@@ -1,0 +1,4 @@
+az\Allahshukur\entity\StudentEntity.class
+az\Allahshukur\Connect\MySQLConnect.class
+az\Allahshukur\repository\StudentRepository.class
+az\Allahshukur\App.class
