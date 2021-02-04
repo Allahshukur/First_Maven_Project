@@ -32,6 +32,11 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.22</version>
     </dependency>
+      <dependency>
+          <groupId>az.Allahshukur</groupId>
+          <artifactId>First_Maven_project</artifactId>
+          <version>1.0-EXAMPLE</version>
+      </dependency>
 
   </dependencies>
 
